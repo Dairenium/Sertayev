@@ -16,4 +16,4 @@ jobs:
         run: node -v
 
       - name: System info
-        run: echo "OS: ${{ runner.os }}; Arch: ${{ runner.arch }}"
+        run: echo "OS: ${{ runner.os }}; Arch: ${{ runner.arch }}"нет
