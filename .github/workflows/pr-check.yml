@@ -16,4 +16,4 @@ jobs:
 
       - name: Failure message
         if: failure()
-        run: echo "Ошибка: проверка не пройдена. README.md отсутствует или предыдущий шаг упал."
+        run: echo "Error: README.md check failed."
