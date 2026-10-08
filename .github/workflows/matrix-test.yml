@@ -1,0 +1,19 @@
+name: Matrix Test
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Check Python version
+        run: python --version
+
+      - name: System info
+        run: echo "OS: ${{ runner.os }}; Arch: ${{ runner.arch }}"
